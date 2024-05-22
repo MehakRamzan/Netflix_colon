@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    border: border-box;
+}
+#Hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./PK-en-20240311-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    
+}
+#Hero::before {
+    content: ""; /* Necessary for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.68); /* Adjust the overlay color and opacity here */
+}
+.nav{
+    height: 92px;
+    width: 1240px;
+    max-width: 1240px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 20;
+    margin: 0 auto;
+}
+.nav-logo{
+    height: 80px;
+    width: 200px;
+    margin-left: 50px; 
+}
+.logo{
+    background-image: url(./Netflix_Logo_PMS.png);
+    background-size: contain;
+    height: 80px;
+}
+.nav-btn{
+    margin-right: 50px;
+}
+.sign-in{
+    height: 40px;
+    width: 80px;
+    background-color: #e50914;
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+    margin: 32px; 
+}
+.section1 {
+    text-align: center; /* Center align content */
+    color: white; /* Text color */
+    z-index: 10; /* Ensure content is above overlay */
+    position: relative; /* Ensure positioning works */
+    margin-top: auto; /* Push section1 to the bottom of the Hero container */
+    margin-bottom: auto; /* Push section1 to the top of the Hero container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section1 h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+#p1{
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#p2{
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+input{
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.68);
+    border: .5px solid rgb(93, 93, 93);
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    width: 360px;
+    height: 55px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+.btn2{
+    height: 60px;
+    width: 200px;
+    background-color: #e50914;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+.box1 h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+.box1 h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+.box1 p{
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    color: white;
+}
+.section2{
+    height: 560px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 8px solid rgb(60, 59, 59);
+}
+.inner-section{
+    height: 433px;
+    width: 1130px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2 {
+    position: relative;
+}
+
+img {
+    display: block; /* Ensure image behaves as a block element */
+    width: 100%;
+    height: auto;
+    z-index: 40;
+    position: relative;
+}
+
+.tv-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure video covers the entire area of the TV image */
+    z-index: 30; /* Ensure video appears above the image */
+}
+.bottom-border{
+    border-bottom: 8px solid rgb(60, 59, 59);
+}
+
+.section4{
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 8px solid rgb(60, 59, 59);
+}
+.sec4-box1{
+    width: 50%;
+
+}
+.sec4-box1 h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+.sec4-box1 p{
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    color: white;
+}
+.innersec4{
+    width: 840px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.section3{
+    height: 570px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 8px solid rgb(60, 59, 59);
+
+}
+.inner-sec3{
+    width: 1113px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sec3-box2 h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+.sec3-box2 p{
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    color: white;
+}
+.sec3-box2{
+    width: 50%;
+}
+.section5{
+    height: 570px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 8px solid rgb(60, 59, 59);
+
+}
+.inner-sec5{
+    width: 1113px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sec5-box2 h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+.sec5-box2 p{
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    color: white;
+}
+.sec5-box2{
+    width: 50%;
+}
+.faq-section {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 400px;
+    text-align: left;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    border-bottom: 8px solid rgb(60, 59, 59);
+}
+
+.faq {
+    margin-bottom: 7px;
+
+}
+
+.question {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1113px;
+    padding: 24px;
+    background-color: rgb(45, 45, 45);
+    margin-bottom: 2px;
+}
+
+.question:hover{
+    background-color: rgb(75, 75, 75);
+}
+
+.answer {
+    display: none;
+    width: 1113px;
+    padding: 24px;
+    background-color: rgb(45, 45, 45);
+}
+
+.question i{
+    font-size: 40px;
+    font-weight: 400 !important;
+    color: white; 
+}
+
+.open {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.faq-section h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 30px;
+}
+.faq-section>p{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#fcon{
+    font-size: 25px;
+}
+footer{
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+}
+.inner-footer{
+    width: 1113px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: rgba(255, 255, 255, 0.79);
+    font-size: 16px;
+    text-decoration: underline;
+    
+}
